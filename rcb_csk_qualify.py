@@ -18,8 +18,8 @@ runs_scored_csk = st.number_input("Runs Scored by CSK",value=180, placeholder="W
 overs_rcb = st.number_input("Overs covered by RCB", value=20.0)
 overs_csk = st.number_input("Overs covered by CSK", value=20.0)
 
-mathematical_overs_rcb = int(overs_rcb) + (overs_rcb-int(overs_rcb))*0.6667
-mathematical_overs_csk = int(overs_csk) + (overs_csk-int(overs_csk))*0.6667
+mathematical_overs_rcb = int(overs_rcb) + (overs_rcb-int(overs_rcb))*0.1667
+mathematical_overs_csk = int(overs_csk) + (overs_csk-int(overs_csk))*0.1667
 
 net_run_rate_for_rcb = (rcb_for_initial_runs+runs_scored_rcb)/(rcb_for_initial_overs+mathematical_overs_rcb)
 net_run_rate_against_rcb = (rcb_against_initial_runs+runs_scored_csk)/(rcb_against_initial_overs+mathematical_overs_csk)
